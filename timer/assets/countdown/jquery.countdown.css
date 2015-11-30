@@ -1,0 +1,68 @@
+.countdownHolder{
+position: absolute;
+width: 390px;
+font: 35px/1.5 'Segoe Print',sans-serif;
+text-align: center;
+letter-spacing: -3px;
+}
+
+.position{
+	display: inline-block;
+	height: 1.6em;
+	overflow: hidden;
+	position: relative;
+	width: 1.05em;
+}
+
+.digit{
+	position:absolute;
+	display:block;
+	width:1em;
+	background-color:#0F4545;
+	border-radius:0.2em;
+	text-align:center;
+	color:#fff;
+	letter-spacing:-1px;
+}
+
+.digit.static{
+	box-shadow:2px 2px 2px rgba(4, 4, 4, 0.5);
+	background-image: linear-gradient(bottom, #0F4545 50%, #0F4545 50%);
+	background-image: -o-linear-gradient(bottom, #0F4545 50%, #0F4545 50%);
+	background-image: -moz-linear-gradient(bottom, #0F4545 50%, #0F4545 50%);
+	background-image: -webkit-linear-gradient(bottom, #0F4545 50%, #0F4545 50%);
+	background-image: -ms-linear-gradient(bottom, #0F4545 50%, #0F4545 50%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.5, #176866),
+		color-stop(0.5, #176866)
+	);
+}
+
+.countDiv{
+	display:inline-block;
+	width:16px;
+	height:1.6em;
+	position:relative;
+}
+
+.countDiv:before,
+.countDiv:after{
+	position:absolute;
+	width:5px;
+	height:5px;
+	background-color:#0F4545;
+	border-radius:50%;
+	left:50%;
+	margin-left:-3px;
+	top:0.5em;
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+	content:'';
+}
+
+.countDiv:after{
+	top:0.9em;
+}
